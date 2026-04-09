@@ -1,0 +1,14 @@
+name = "ttimes-doctor"
+main = "index.js"
+compatibility_date = "2024-01-01"
+
+# ⚠️ [placement] 절대 추가 금지! 대시보드에서 수동 설정 (aws:us-east-1)
+# wrangler deploy 후 대시보드에서 Region 확인할 것
+
+[[kv_namespaces]]
+binding = "SESSIONS"
+id = "b91de13be69045e59941b1ff000ffa0a"
+
+# Secrets (wrangler secret put 으로 설정):
+# - OPENAI_API_KEY
+# - GEMINI_API_KEY
